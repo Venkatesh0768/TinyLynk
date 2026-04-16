@@ -1,0 +1,10 @@
+node_modules/
+.next/
+out/
+build/
+.env*
+!.env.production
+.vercel/
+*.log
+.DS_Store
+README.md
