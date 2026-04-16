@@ -72,8 +72,11 @@ public class SecurityConfig {
             "/v3/api-docs/**",
             "/swagger-ui/**",
             "/swagger-ui.html",
-            // Health check (full actuator restricted in role-based section)
+            // Health check
             "/actuator/health",
+
+            "/api/v1/urls",          // guest URL creation (POST)
+            "/{shortCode}",          // redirect (GET)
     };
 
     @Bean

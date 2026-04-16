@@ -1,0 +1,2 @@
+ALTER TABLE urls
+    MODIFY COLUMN user_id BIGINT NULL;

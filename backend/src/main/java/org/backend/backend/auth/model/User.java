@@ -25,10 +25,6 @@ public class User {
     @Column(unique = true, nullable = false)
     private String email;
 
-    /**
-     * Nullable — OAuth2 users (Google/GitHub) do not have a local password.
-     * Local users always have a BCrypt-hashed password.
-     */
     @Column(nullable = true)
     private String password;
 
